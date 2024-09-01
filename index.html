@@ -3,96 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Plataforma de Citas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="logo/logo.png" alt="Logo Plataforma de Citas">
-            <h1>Plataforma de Citas</h1>
+            <img src="logo/logo.png" alt="Logo de la Plataforma">
         </div>
-        <img src="images/header-image.jpg" alt="Imagen de Cabecera" class="header-image">
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="profile.html">Perfil</a></li>
-                <li><a href="subscription.html">Suscripción</a></li>
                 <li><a href="business.html">Negocios</a></li>
+                <li><a href="subscription.html">Suscripción</a></li>
                 <li><a href="download.html">Descargar App</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
-        <!-- Sección de registro -->
-        <section class="registro">
-            <h2>Encuentra tu cita ideal</h2>
-            <form action="#" method="POST">
-                <label for="nombre">Nombre Completo:</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="correo">Correo Electrónico:</label>
-                <input type="email" id="correo" name="correo" required>
-
-                <label for="telefono">Número Telefónico:</label>
-                <input type="tel" id="telefono" name="telefono" required>
-
-                <label for="gustos">Gustos Personales:</label>
-                <input type="text" id="gustos" name="gustos" placeholder="Ej. Comida, música, actividades">
-
+        <section id="registration">
+            <h2>Registro de Usuario</h2>
+            <form id="registration-form" action="https://formspree.io/f/xnnawedo" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Número Telefónico:</label>
+                <input type="tel" id="phone" name="phone">
+                
                 <button type="submit">Registrarse</button>
             </form>
-            <img src="images/registro-image.jpg" alt="Imagen de Registro" class="registro-image">
         </section>
 
-        <!-- Sección de juegos -->
-        <section id="juegos">
-            <h2>Diviértete con nuestros juegos</h2>
-            
-            <!-- Piedra, Papel o Tijera -->
-            <div class="juego" id="piedra-papel-tijera">
-                <h3>Piedra, Papel o Tijera</h3>
-                <div class="botones-juego">
-                    <button onclick="play('piedra')">Piedra</button>
-                    <button onclick="play('papel')">Papel</button>
-                    <button onclick="play('tijera')">Tijera</button>
-                </div>
-                <div id="result" class="resultado-juego"></div>
-            </div>
-
-            <!-- Adivina el Número -->
-            <div class="juego" id="adivina-numero">
-                <h3>Adivina el Número</h3>
-                <p>Adivina un número entre 1 y 100:</p>
-                <input type="number" id="guess" min="1" max="100">
-                <button onclick="guessNumber()">Adivinar</button>
-                <div id="guess-result" class="resultado-juego"></div>
-            </div>
-
-            <!-- Imágenes de Juegos -->
-            <img src="images/juegos-image1.jpg" alt="Imagen de Juegos 1" class="juegos-image">
-            <img src="images/juegos-image2.jpg" alt="Imagen de Juegos 2" class="juegos-image">
-        </section>
-
-        <!-- Sección de Galería -->
-        <section class="galeria">
-            <h2>Galería</h2>
-            <img src="images/photo1.jpg" alt="Foto 1" class="galeria-imagen">
-            <img src="images/photo2.jpg" alt="Foto 2" class="galeria-imagen">
-            <img src="images/photo3.jpg" alt="Foto 3" class="galeria-imagen">
-            <img src="images/photo4.jpg" alt="Foto 4" class="galeria-imagen">
-            <img src="images/photo5.jpg" alt="Foto 5" class="galeria-imagen">
-        </section>
+        <!-- Otras secciones de la página -->
     </main>
 
     <footer>
         <p>&copy; 2024 Plataforma de Citas. Todos los derechos reservados.</p>
-        <a href="download.html" class="download-app">Descargar App</a>
     </footer>
-
-    <!-- Enlace al archivo JavaScript -->
-    <script src="scripts.js" defer></script>
 </body>
 </html>
+
