@@ -1,0 +1,151 @@
+/* Archivo style.css */
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sección de registro */
+.registro {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.registro form {
+    display: flex;
+    flex-direction: column;
+}
+
+.registro form label {
+    margin: 5px 0;
+}
+
+.registro form input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.registro form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.registro-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Sección de juegos */
+#juegos {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.juego {
+    margin-bottom: 20px;
+}
+
+.botones-juego button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.resultado-juego {
+    margin-top: 10px;
+}
+
+.juegos-image {
+    width: 48%;
+    margin: 1%;
+    display: inline-block;
+}
+
+/* Sección de galería */
+.galeria {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.galeria-imagen {
+    width: 19%;
+    margin: 0.5%;
+    display: inline-block;
+}
+
+/* Pie de página */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.download-app {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Publicidad para Negocios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Plataforma de Citas</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="profile.html">Perfil</a></li>
+                <li><a href="subscription.html">Suscripción</a></li>
+                <li><a href="business.html">Negocios</a></li>
+                <li><a href="download.html">Descargar App</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="negocios">
+            <h2>Publicidad para Negocios</h2>
+            <p>¿Quieres que tu negocio aparezca en nuestras sugerencias?</p>
+            <form action="#" method="POST">
+                <label for="nombre-negocio">Nombre del Negocio:</label>
+                <input type="text" id="nombre-negocio" name="nombre-negocio" required>
+
+                <label for="ubicacion">Ubicación:</label>
+                <input type="text" id="ubicacion" name="ubicacion" required>
+
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" name="categoria">
+                    <option value="bar">Bar</option>
+                    <option value="discoteca">Discoteca</option>
+                    <option value="restaurante">Restaurante</option>
+                </select>
+
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Plataforma de Citas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
